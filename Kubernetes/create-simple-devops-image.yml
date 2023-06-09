@@ -9,11 +9,11 @@
       chdir: /opt/kubernetes
 
   - name: create tag to image
-    command: docker tag simple-devops-image ameintu/simple-devops-image
+    command: docker tag simple-devops-image utube/docker_ci
 
   - name: push image on to dockerhub
-    command: docker push ameintu/simple-devops-image
+    command: docker push utube/docker_ci
 
   - name: remove docker images form ansible server
-    command: docker rmi tomcat simple-devops-image:latest ameintu/simple-devops-image
+    command: docker rmi tomcat simple-devops-image:latest utube/docker_ci
     ignore_errors: yes
