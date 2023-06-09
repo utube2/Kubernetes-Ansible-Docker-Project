@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: amit-devops-project
-        image: ameintu/simple-devops-image
+        image: utube/docker_ci:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
