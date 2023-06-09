@@ -6,4 +6,4 @@
 
   tasks:
   - name: create a service
-    command: kubectl apply -f amit-service.yml
+    command: kubectl apply -f /opt/kubernetes/amit-service.yml
